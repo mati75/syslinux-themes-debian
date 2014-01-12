@@ -1,0 +1,41 @@
+Source: syslinux-themes-debian
+Section: misc
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: syslinux-themes-debian
+Architecture: all
+Depends: ${misc:Depends}, syslinux-themes-debian-wheezy
+Description: collection of boot loaders (theme metapackage)
+ SYSLINUX is a collection of boot loaders which operates off Linux ext2/3/4 or
+ btrfs filesystems, MS-DOS FAT filesystems, network servers using PXE firmware,
+ or from CD-ROMs.
+ .
+ This package depends on the package with the graphical bootloader theme
+ for the matching Debian release.
+
+Package: syslinux-themes-debian-squeeze
+Architecture: all
+Depends: ${misc:Depends}, memtest86+, syslinux-common
+Enhances: extlinux
+Provides: syslinux-theme
+Description: collection of boot loaders (debian-squeeze theme)
+ SYSLINUX is a collection of boot loaders which operates off Linux ext2/3/4 or
+ btrfs filesystems, MS-DOS FAT filesystems, network servers using PXE firmware,
+ or from CD-ROMs.
+ .
+ This package contains the graphical bootloader theme for Debian squeeze.
+
+Package: syslinux-themes-debian-wheezy
+Architecture: all
+Depends: ${misc:Depends}, memtest86+, syslinux-common
+Enhances: extlinux
+Provides: syslinux-theme
+Description: collection of boot loaders (debian-wheezy theme)
+ SYSLINUX is a collection of boot loaders which operates off Linux ext2/3/4 or
+ btrfs filesystems, MS-DOS FAT filesystems, network servers using PXE firmware,
+ or from CD-ROMs.
+ .
+ This package contains the graphical bootloader theme for Debian wheezy.

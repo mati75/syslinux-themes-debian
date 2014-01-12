@@ -1,0 +1,139 @@
+syslinux-themes-debian (12-3) unstable; urgency=low
+
+  * QA upload.
+  * Maintainer field set to QA Group.
+  * Remove Uploaders field.
+  * Bump Standards-Version to 3.9.5.
+
+ -- Emanuele Rocca <ema@debian.org>  Sun, 12 Jan 2014 23:48:24 +0100
+
+syslinux-themes-debian (12-2) unstable; urgency=low
+
+  * set myself as maintainer (closes: 704329)
+
+ -- "Super" Nathan Weber <supernathansunshine@gmail.com>  Mon, 20 May 2013 17:51:46 +0900
+
+syslinux-themes-debian (12-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix the artwork to match the official Wheezy theme. We're no longer using
+    spacefun. A big thank-you to Mika Pflüger, who provided the images
+    (Closes: #688272).
+
+ -- Paul Tagliamonte <paultag@debian.org>  Sat, 22 Sep 2012 23:17:43 -0400
+
+syslinux-themes-debian (12-1) unstable; urgency=low
+
+  * Updating paths in debian-wheezy theme for wheezy (Closes: #681426).
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Thu, 20 Sep 2012 12:38:40 +0200
+
+syslinux-themes-debian (11-1) unstable; urgency=low
+
+  * Using compression level 9 also for binary packages.
+  * Updating to debhelper version 9.
+  * Updating year in copyright file.
+  * Adding postrm scripts to theme packages remove themselfs from the
+    extlinux config if they were the configured theme to be used
+    (Closes: #655494, #656663).
+  * Adding copy of debian-squeeze theme to debian-wheezy.
+  * Switching to xz compression.
+  * Updating copyright file to format version 1.0.
+  * Updating to standards version 3.9.3.
+  * Updating packaging for wheezy theme.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Sat, 30 Jun 2012 14:38:36 +0200
+
+syslinux-themes-debian (10-1) unstable; urgency=low
+
+  * Compacting copyright file.
+  * Removing debian-lenny theme.
+  * Adding live.cfg for live-build version 3.
+  * Temporarily removing non-working pxelinux config.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Wed, 13 Jul 2011 13:42:31 +0200
+
+syslinux-themes-debian (9-1) unstable; urgency=low
+
+  * Updating isolinux configs.
+  * Updating standards version to 3.9.2.
+  * Updating syslinux specific bootloader themes.
+  * Completing syslinux and pxelinux specific bootloader files (Closes:
+    #627150).
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 23 May 2011 08:25:38 +0200
+
+syslinux-themes-debian (8-1) unstable; urgency=low
+
+  * Adding isolinux symlinks.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Mon, 14 Feb 2011 16:32:09 +0100
+
+syslinux-themes-debian (7-1) unstable; urgency=low
+
+  * Updating maintainer and uploaders fields.
+  * Removing vcs fields.
+  * Removing homepage field.
+  * Removing references to my old email address.
+  * Makeing packaging distribution neutral.
+  * Adding separate isolinux configs.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Thu, 03 Feb 2011 08:03:48 +0100
+
+syslinux-themes-debian (6-1) experimental; urgency=low
+
+  * Updating themes packaging for live-build 3.x (Closes: #606709).
+  * Updating to debhelper version 8.
+  * Updating to standards version 3.9.1.
+  * Switching to source format 3.0 (quilt).
+  * Updating year in copyright file.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Thu, 03 Feb 2011 07:28:29 +0100
+
+syslinux-themes-debian (5-1) unstable; urgency=low
+
+  * Including os-prober configuration file.
+  * Updating squeeze theme (Closes: #603552).
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Tue, 01 Feb 2011 23:00:55 +0100
+
+syslinux-themes-debian (4-1) experimental; urgency=low
+
+  * Symlinking additional com32 modules (config, reboot, rosh).
+  * Updating package descriptions (Closes: #601759).
+  * Including memdisk configuration file.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Fri, 07 Jan 2011 13:28:26 +0100
+
+syslinux-themes-debian (3-1) unstable; urgency=low
+
+  [ Daniel Baumann ]
+  * Updating standards version to 3.9.0.
+  * Removing menu default from other.cfg.
+
+  [ Fabian Greffrath ]
+  * Starting memtest image via linux (Closes: #587726).
+
+  [ Daniel Baumann ]
+  * Moving memtest86+ and syslinux-common to depends until extlinux-
+    update scripts are ready to handle it conditionally.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Thu, 15 Jul 2010 19:36:16 +0200
+
+syslinux-themes-debian (2-1) unstable; urgency=low
+
+  * Adding explicit source version 1.0 until switch to 3.0.
+  * Updating year in copyright file.
+  * Updating to standards 3.8.4.
+  * Updating memtest symlinks.
+  * Adding payload specific themes.
+  * Updating kernel include filename.
+  * Resizing splash images to match new syslinux resolutions.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Sat, 19 Jun 2010 17:56:34 +0200
+
+syslinux-themes-debian (1-1) experimental; urgency=low
+
+  * Initial release.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Sun, 06 Dec 2009 11:41:01 +0100
